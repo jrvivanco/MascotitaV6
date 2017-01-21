@@ -1,0 +1,46 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ashera"
+            android:gravity="center_vertical"
+            app:civ_border="true"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/colorAzul"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_nombrePerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ashera"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_gridPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+</FrameLayout>

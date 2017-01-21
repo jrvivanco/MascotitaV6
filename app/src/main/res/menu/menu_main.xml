@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.jrvivanco.mascotita.MainActivity">
+
+    <item
+        android:id="@+id/menuActionFavorito"
+        android:icon="@drawable/start"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="Favoritos"
+        />
+
+    <item
+        android:id="@+id/menuActionContacto"
+        android:title="Contacto"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menuActionAcercaDe"
+        android:title="Acerca de"
+        android:orderInCategory="102"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuConfigurarCuenta"
+        android:title="Configurar Cuenta"
+        android:orderInCategory="103"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/mnuRecibirNotificacion"
+        android:title="@string/txtRecibirNotificaciones"
+        android:orderInCategory="104"
+        >
+    </item>
+</menu>
